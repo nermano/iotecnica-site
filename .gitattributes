@@ -1,0 +1,22 @@
+# Normaliza fim de linha entre Linux (Debian5) e Windows (notebook / maquina do Joao).
+# Sem isto, cada checkout no Windows reescreve o arquivo inteiro e todo PR vira ruido.
+* text=auto eol=lf
+
+*.sh   text eol=lf
+*.ps1  text eol=crlf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.xlsx binary
+*.xls  binary
+*.zip  binary
+*.bin  binary
+*.woff binary
+*.woff2 binary
